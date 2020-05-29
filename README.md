@@ -10,7 +10,7 @@ U-net, is based on python 3.7+ and tensor-flow 2.1.0.
 
 M-net, is based on python 3.7+ and paddlepaddle 1.8
 
-Why we use so many deep learning framework? Because we are newcomers and poor, we want to learn more and use free GPU.
+Why we use so many deep learning framework? Because we are poor newcomers, we want to learn more and use free GPU.
 
 ## How to use:
 
