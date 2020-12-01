@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>forum</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main/mygrxx.css" />
+
+  <!--|Icon Fonts(Ionicons)|-->
+  <link href="css/main/ionicons.min.css" rel="stylesheet" type="text/css">
+  <!--|Vegas|-->
+  <link href="css/main/vegas.min.css" rel="stylesheet" type="text/css">
+  <!--|Magnific Popup|-->
+  <link href="css/main/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!--|Owl Carousel|-->
+  <link href="css/main/owl.carousel.css" rel="stylesheet" type="text/css">
+  <!--|Bootstrap|-->
+  <link href="css/main/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!--|Site Stylesheet|-->
+  <!--//Note: If you want to change color, just uncomment the commented stylesheet link and comment the uncommented link -->
+  <link href="css/main/style.css" rel="stylesheet" type="text/css"> <!-- Default Cyan -->
+  <!--<link href="css/main/style_amber.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_blue.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_green.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_purple.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_indigo.css" rel="stylesheet" type="text/css">-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="js/main/html5shiv.min.js"></script>
+  <script src="js/main/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+<body class="blog-listing"></body>
+<!--|Preloader|-->
+<div class="preloader"></div>
+<!--|End Preloader|-->
+
+<div class="wrapper">
+  <!--|===================================================================
+  | Header
+  |=======================================================================|-->
+  <header class="header">
+    <div class="container">
+      <div class="top-bar">
+        <a href="javascript:void(0);" onClick='function0("main.html")'>
+          <p><span class="desktop-meta">Gon Detector</p>
+        </a>
+        <p class="pull-right account-area"> <a class="sign-up btn-primary" href="javascript:void(0);"
+            onClick='function0("personcenter.html")'>个人中心</a></p>
+        <p class="pull-right account-area" id="welcome" style="text-transform:none"> </p>
+
+      </div>
+
+
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="ion-drag"></span>
+          </button>
+        </div>
+
+        <!--Site Navbar-->
+        <div class="collapse scrollspy navbar-collapse" id="primary-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0);" onClick='function0("main.html")'>主页</a></li>
+            <li class="active"><a>交流论坛</a></li>
+            <li><a href="javascript:void(0);" onClick='function0("knowaboutus.html")'>了解我们</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <div id='progress-bar'>
+          <div id="progress">
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--|End Header|-->
+
+
+  <!--|===================================================================
+  | Page Header
+  |=======================================================================|-->
+  <div id="blog-listing" class="page-header">
+    <div class="container">
+      <h2 class="page-title pull-left">FORUM</h2>
+
+      <div class="breadcrumb-trail pull-right">
+        <span class="trail-before">
+          <span class="breadcrumb-title">You are here:</span>
+        </span>
+        <a class="trail-link" href="index.html" title="Alfa Home" rel="home">Home</a>
+        <span class="sep">/</span>
+        <span class="trail-end">forum</span>
+      </div>
+    </div>
+  </div>
+  <!--|End Page Header|-->
+
+  <div class="post-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-7" id="all-passage">
+          <!--|Post|-->
+          <div class="post" id="passage-0" style="display: none;">
+
+            <div class="media-container ratio-16-9">
+              <div class="ratio-inner">
+                <img class="fmpciture" src="assets/images/posts/img01.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="post-desc">
+              <h4 class="post-title"><a href="javascript:void(0);">文章标题</a></h4>
+
+              <div class="post-info fp-meta">
+                <span class="post-autor">上传者: <b>xxx</b></span>
+                <span class="post-comment-count" style="float: right;">上传时间: <b></b></span>
+              </div>
+
+              <div class="entry-conetnt">
+                <p class="fmintro">简介</p>
+                <a class="fp-more btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!--|End Post|-->
+        </div>
+
+        <div class="branch-proup"><!-- 弹出灰色遮罩 -->
+          <div class="bj" id="uparticle">
+            <h3>上传文章</h3>
+            <form id="upload_article" name="upload_article" action="" method="post" enctype="multipart/form-data">
+              <input type="text" id="username" name="username" style="display: none;">
+              <p><label>文章标题：</label><input type="text" id="bj_title" name="bj_title" /></p>
+              <p><label>文章简介：</label></p>
+              <textarea name="bj_intro" id="bj_intro" placeholder="请输入文章简介"
+                style="width: 100%;height: 100px;"></textarea>
+                <p><label>封面图片：（如不上传则使用默认图片）</label><input type="file" name="pfile" id="bj_picture" accept="image/*" /></p>
+                <p><label>文章：(请上传markdown格式的文章)</label><input type="file" name="afile" id="bj_passage" /></p>
+                <div class="bc">
+                  <input type="button" value="上传" onclick="func_save()" />
+                  <input type="button" value="取消" onclick="func_cancel()" />
+                </div>
+            </form>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-5">
+          <aside class="sidebar">
+
+            <div class="widget">
+              <div id="my_uparticle_button">
+                <button type="button"
+                  onclick='javascript:document.getElementById("uparticle").style.display="block";
+                  document.getElementsByClassName("branch-proup")[0].style.display="block";'>上传文章</button>
+              </div>
+            </div>
+
+
+
+            <!--|Widget|-->
+            <div class="widget search">
+              <h4 class="widget-title">查找</h4>
+              <form onsubmit="return false;">
+                <input type="text" placeholder="输入文章标题" id="search_article">
+              </form>
+            </div>
+            <!--|End Widget|-->
+
+            <!--|Widget|-->
+            <div class="widget recent-post widget-posts">
+              <h4 class="widget-title">热门文章</h4>
+
+              <ul>
+
+                <li>
+                  <a class="widget-post" href="#">
+                    <div class="thumb">
+                      <img class="hot_article_pic" alt="" src="assets/images/posts/post_thumb01.jpg">
+                    </div>
+                    <div class="post-disc">
+                      <h4 class="title">文章一</h4>
+                      <span class="fp-meta">xxxx.x.xx</span>
+                      <br><span class="fp-meta">作者：xxx</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="widget-post" href="#">
+                    <div class="thumb">
+                      <img class="hot_article_pic" alt="" src="assets/images/posts/post_thumb02.jpg">
+                    </div>
+                    <div class="post-disc">
+                      <h4 class="title">文章二</h4>
+                      <span class="fp-meta">xxxx.x.xx</span>
+                      <br><span class="fp-meta">作者：xxx</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="widget-post" href="#">
+                    <div class="thumb">
+                      <img class="hot_article_pic" alt="" src="assets/images/posts/post_thumb03.jpg">
+                    </div>
+                    <div class="post-disc">
+                      <h4 class="title">文章三</h4>
+                      <span class="fp-meta">xxxx.x.xx</span>
+                      <br><span class="fp-meta">作者：xxx</span>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <!--|End Widget|-->
+
+            <!--|Widget|-->
+            <div class="widget category">
+              <h4 class="widget-title">分类</h4>
+
+              <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Print</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Agency</a></li>
+              </ul>
+            </div>
+            <!--|End Widget|-->
+
+            <!--|Widget|-->
+            <div class="widget tags">
+              <h4 class="widget-title">标签</h4>
+
+              <div class="tags-wrap">
+                <a href="#">Economy</a>
+                <a href="#">Article</a>
+                <a href="#">Health</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Music</a>
+                <a href="#">News</a>
+                <a href="#">Science</a>
+              </div>
+            </div>
+            <!--|End Widget|-->
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--|===================================================================
+  | Footer
+  |=======================================================================|-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+      </div>
+    </div>
+  </footer>
+  <!--|End Footer|-->
+
+  <!--|Scroll Top|-->
+  <a class="scroll-top" href="#blog-listing"><i class="ion-arrow-up-a"></i></a>
+</div>
+
+
+<!--|===================================================================
+| Javascripts
+|=======================================================================|-->
+<!--|jQuery|-->
+<script src="js/main/jquery.min.js"></script>
+<!--|Waypoints|-->
+<script src="js/main/waypoints.min.js"></script>
+<!--|Vegas|-->
+<script src="js/main/vegas.min.js"></script>
+<!--|Fitvids|-->
+<script src="js/main/jquery.fitvids.js"></script>
+<!--|Counterup|-->
+<script src="js/main/jquery.counterup.min.js"></script>
+<!--|Appear|-->
+<script src="js/main/jquery.appear.js"></script>
+<!--|Mixitup|-->
+<script src="js/main/jquery.mixitup.min.js"></script>
+<!--|Magnific Popup|-->
+<script src="js/main/jquery.magnific-popup.min.js"></script>
+<!--|Owl Carousel|-->
+<script src="js/main/owl.carousel.min.js"></script>
+<!--|Validate|-->
+<script src="js/main/jquery.validate.min.js"></script>
+<!--|Ajaxchimp|-->
+<script src="js/main/jquery.ajaxchimp.min.js"></script>
+<!--|Form|-->
+<script src="js/main/jquery.form.js"></script>
+<!--|Bootstrap|-->
+<script src="js/main/bootstrap.min.js"></script>
+<!--|Init|-->
+<script src="js/main/init.js"></script>
+
+<script src="js/forum/forum.js"></script>
+
+<script src="assets/js/username.js"></script>
+</body>
+
+</html>

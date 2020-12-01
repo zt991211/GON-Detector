@@ -1,0 +1,95 @@
+
+/*编辑个人信息*/
+.bj,.xg{
+	width: 500px;
+	position: fixed;
+	top: 15%;
+	left: 20%;
+	margin-top: 0px;
+	margin-left: 220px;
+	z-index: 1000;
+	background: #fff;
+	border-radius: 10px;
+	padding: 15px;
+	display: none;
+}
+.bj div a,.xg div a,.avatar div a{
+	width: 20px;
+	height: 20px;
+}
+.bj div a img,.xg div a img,.avatar div a img{
+	width: 100%;
+	display: block;
+}
+.bj h3,.xg h3,.avatar h3{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.bj form,.xg form{
+	padding: 40px 50px;
+}
+.bj form p,.xg form p{
+	margin-bottom: 10px;
+	color: #666666;
+}
+.bj form p input,.xg form p input{
+	border:1px solid #e8e8e8; 
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 5px;
+}
+
+.bj form div,.xg form div{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.bj form div input,.xg form div input{
+	display: inline-block;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+}
+.bj form div input:nth-child(1),.xg form div input:nth-child(1){
+	background: #A10000;
+	color: #FFFFFF;
+}
+
+
+
+
+/*css预设*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*将所有HTML元素的默认边距清0*/
+
+html,
+body {
+	font-size: 12px;
+	font-family: "微软雅黑", "arial";
+	color: #262626;
+	background: #FFF;
+}
+
+/*将列表标签的默认样式清除*/
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #262626;
+	blr: expression(this.onFocus=this.blur());
+}
+
+/*将超链接的下划线去掉以及在ie6中点击出现的虚线框去掉*/
+
+img {
+	border: none;
+}

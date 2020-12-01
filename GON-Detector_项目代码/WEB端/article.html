@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>article</title>
+
+  <!--|Icon Fonts(Ionicons)|-->
+  <link href="css/main/ionicons.min.css" rel="stylesheet" type="text/css">
+  <!--|Vegas|-->
+  <link href="css/main/vegas.min.css" rel="stylesheet" type="text/css">
+  <!--|Magnific Popup|-->
+  <link href="css/main/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!--|Owl Carousel|-->
+  <link href="css/main/owl.carousel.css" rel="stylesheet" type="text/css">
+  <!--|Bootstrap|-->
+  <link href="css/main/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!--|Site Stylesheet|-->
+  <!--//Note: If you want to change color, just uncomment the commented stylesheet link and comment the uncommented link -->
+  <link href="css/main/style.css" rel="stylesheet" type="text/css"> <!-- Default Cyan -->
+  <!--<link href="css/main/style_amber.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_blue.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_green.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_purple.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_indigo.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body class="blog-listing">
+<!--|Preloader|-->
+<div class="preloader"></div> <!--|End Preloader|-->
+
+<div class="wrapper">
+  <!--|===================================================================
+  | Header
+  |=======================================================================|-->
+  <header class="header">
+    <div class="container">
+      <div class="top-bar">
+        <a href="javascript:void(0);" onClick='function0("main.html")'><p><span class="desktop-meta">Gon Detector</p></a>
+          <p class="pull-right account-area" style="text-transform:none"><a class="login" href="#" id="fwelcome"></a> </p>
+      </div>
+
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="ion-drag"></span>
+          </button>
+
+        </div>
+
+        <!--Site Navbar-->
+        <div class="collapse scrollspy navbar-collapse" id="primary-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0);" onClick='function0("main.html")'>主页</a></li>
+            <li><a href="javascript:void(0);" onClick='function0("forum.html")'>论坛</a></li>
+            <li><a href="javascript:void(0);" onClick='function0("knowaboutus.html")'>了解我们</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <div id='progress-bar'>
+          <div id="progress">
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header> <!--|End Header|-->
+
+  <!--|===================================================================
+  | Page Header
+  |=======================================================================|-->
+  <div id="blog-listing" class="page-header">
+    <div class="container">
+      <h2 class="page-title pull-left">ARTICLE</h2>
+
+      <div class="breadcrumb-trail pull-right">
+      <span class="trail-before">
+        <span class="breadcrumb-title">You are here:</span>
+      </span>
+        <a class="trail-link" href="index.html" title="Home" rel="home">Home</a>
+        <span class="sep">/</span>
+        <a class="trail-link" href="forum.html" title="Forum" rel="home">Forum</a>
+        <span class="sep">/</span>
+        <span class="trail-end">article</span>
+      </div>
+    </div>
+  </div> <!--|End Page Header|-->
+
+  <div class="post-wrapper1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-7">
+          <!--|Post|-->
+          <div class="post">
+            <a class="media-container ratio-16-9" href="post_single.html">
+              <div class="ratio-inner">
+                <img src="assets/images/posts/img01.jpg" alt="" id="article_picture">
+              </div>
+            </a>
+            <div class="post-desc">
+              <div id="mdpassage"></div>
+
+              <!--|Post Tags|-->
+              <div class="post-tags">
+                <span>Tags: </span>
+                <a href="#">Lifestyle</a>
+                <a href="#">Travelling</a>
+                <a href="#">Work</a>
+                <a href="#">Changes</a>
+                <a href="#">Journey</a>
+              </div> <!--|End Post Tag|-->
+            </div>
+          </div> <!--|End Post|-->
+
+          <div class="comment-lists content-block">
+            <h4 class="block-title"><div class="commentnum">0 评论</div></h4>
+
+            <ul class="comments-lists">
+              <li>
+
+                <div class="comment-content" id="comment-0" style="display: none;">
+                  <img src="assets/images/avatar01.jpg" alt="" class="avatar">
+
+                  <div class="disc">
+                    <header class="comment-data">
+                      <h5 class="author-name">评论者</h5>
+                      <span class="meta">January 25<sup>th</sup> at 10.20</span>
+                    </header>
+
+                    <div class="ccomment"><p>评论</p></div>
+                   <!-- <a href="#" class="reply-btn">回复</a>-->
+                  </div>
+                </div>
+            </ul>
+          </div>
+
+          <div class="comment-form-wrapper content-block">
+            <h4 class="block-title">评论</h4>
+            <form class="comment-form">
+              <textarea rows="8" placeholder="Message*" id="comment"></textarea>
+              <button type="button" class="btn btn-primary" onclick="upComment()">发表</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--|===================================================================
+  | Footer
+  |=======================================================================|-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+      </div>
+    </div>
+  </footer> <!--|End Footer|-->
+
+
+
+<!--|Scroll Top|-->
+<a class="scroll-top" href="#blog-listing"><i class="ion-arrow-up-a"></i></a>
+</div>
+
+
+<!--|===================================================================
+| Javascripts
+|=======================================================================|-->
+<!--|jQuery|-->
+<script src="js/main/jquery.min.js"></script>
+<!--|Waypoints|-->
+<script src="js/main/waypoints.min.js"></script>
+<!--|Vegas|-->
+<script src="js/main/vegas.min.js"></script>
+<!--|Fitvids|-->
+<script src="js/main/jquery.fitvids.js"></script>
+<!--|Counterup|-->
+<script src="js/main/jquery.counterup.min.js"></script>
+<!--|Appear|-->
+<script src="js/main/jquery.appear.js"></script>
+<!--|Mixitup|-->
+<script src="js/main/jquery.mixitup.min.js"></script>
+<!--|Magnific Popup|-->
+<script src="js/main/jquery.magnific-popup.min.js"></script>
+<!--|Owl Carousel|-->
+<script src="js/main/owl.carousel.min.js"></script>
+<!--|Validate|-->
+<script src="js/main/jquery.validate.min.js"></script>
+<!--|Ajaxchimp|-->
+<script src="js/main/jquery.ajaxchimp.min.js"></script>
+<!--|Form|-->
+<script src="js/main/jquery.form.js"></script>
+<!--|Bootstrap|-->
+<script src="js/main/bootstrap.min.js"></script>
+<!--|Init|-->
+<script src="js/main/init.js"></script>
+
+<script src="js/article/article.js"></script>
+<script src="js/article/Markdown.Converter.js"></script>
+
+<script src="assets/js/username.js"></script>
+</body>
+</html>

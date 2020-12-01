@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>detection</title>
+
+  <!--|Icon Fonts(Ionicons)|-->
+  <link href="css/main/ionicons.min.css" rel="stylesheet" type="text/css">
+  <!--|Vegas|-->
+  <link href="css/main/vegas.min.css" rel="stylesheet" type="text/css">
+  <!--|Magnific Popup|-->
+  <link href="css/main/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!--|Owl Carousel|-->
+  <link href="css/main/owl.carousel.css" rel="stylesheet" type="text/css">
+  <!--|Bootstrap|-->
+  <link href="css/main/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!--|Site Stylesheet|-->
+  <!--//Note: If you want to change color, just uncomment the commented stylesheet link and comment the uncommented link -->
+  <link href="css/main/style.css" rel="stylesheet" type="text/css"> <!-- Default Cyan -->
+  <!--<link href="css/main/style_amber.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_blue.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_green.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_purple.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/main/style_indigo.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+<!--|Preloader|-->
+<div class="preloader"></div> <!--|End Preloader|-->
+
+<div class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <div class="top-bar">
+        <a href="javascript:void(0);" onClick='function0("main.html")'><p><span class="desktop-meta">Gon Detector</p></a>       
+        <p class="pull-right account-area" > <a class="sign-up btn-primary" href="javascript:void(0);" onClick='function0("personcenter.html")'>个人中心</a></p>
+        <p class="pull-right account-area" id="welcome" style="text-transform:none"> </p>
+      </div>
+
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="ion-drag"></span>
+          </button>
+        </div>
+
+        <!--Site Navbar-->
+        <div class="collapse scrollspy navbar-collapse" id="primary-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0);" onClick='function0("main.html")'>首页</a></li>
+            <li><a href="#example">示例</a></li>
+            <li><a href="#detect">检测</a></li>                
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <div id='progress-bar'>
+          <div id="progress">
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header> <!--|End Header|-->
+  <!--|===================================================================
+  | About
+  |=======================================================================|-->
+
+  <br>
+  <br>
+  <div id="about">
+
+    <section class="section section-bg" id="example">
+      <div class="container">
+        <header class="section-header text-center">
+          <div class="row">
+            <div class="col-md-9 block-center">
+              <h2 class="section-title">眼底图像示例</h2>
+              <p>图一为青光眼眼底图像，图二为非青光眼眼底图像。
+                <br>图像均为专业眼底成像设备拍摄。
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <img src="img/detection/Glaucoma.jpg" alt="" style="width: 40%;float: left;margin-left: 5%;">
+        <img src="img/detection/non-glaucoma.jpg" alt="" style="width: 40%;float:right;margin-right: 5%;">
+
+      </div>
+    </section>
+
+    <div class="statistics" id="simple_data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--|Statistic Box|-->
+            <div class="statistic-box">
+              <h4 class="title"><span class="countup">666</span></h4>
+              <span class="fp-meta">Line of Code</span>
+            </div> <!--|End Statistic Box|-->
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <!--|Statistic Box|-->
+            <div class="statistic-box">
+              <h4 class="title"><span class="countup">7130</span></h4>
+              <span class="fp-meta">Registed User</span>
+            </div> <!--|End Statistic Box|-->
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <!--|Statistic Box|-->
+            <div class="statistic-box">
+              <h4 class="title"><span class="countup">10000000</span>+</h4>
+              <span class="fp-meta">visits</span>
+            </div> <!--|End Statistic Box|-->
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <!--|Statistic Box|-->
+            <div class="statistic-box">
+              <h4 class="title"><span class="countup">5000</span>+</h4>
+              <span class="fp-meta">eye-ground photography</span>
+            </div> <!--|End Statistic Box|-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="detect">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6" id="preview"></div>
+
+
+          <div class="col-md-6">
+
+            <div class="section-header">
+              <h2 class="section-title">开始检测</h2>
+              <p>上传jpg或者png格式的眼底图像，且为专业设备拍摄。</p>
+            </div>
+
+            <div class="section-text">
+              <p class="sub-title">我们的优势</p>
+              <ul class="fp-list">
+                <li>识别准确率高</li>
+                <li>识别速度快</li>
+                <li>自动生成存档便于追溯</li>
+              </ul>
+            </div>
+
+             <!--<iframe name=myiframe style="display: none;"></iframe>
+             <form id="dec_up_picture" action="php/save_picture.php" method="POST" enctype="multipart/form-data" target="myiframe">-->
+              <form id="dec_up_picture" name="dec_up_picture" action="" method="post" enctype="multipart/form-data">
+              <input type="text" id="username" name="username" style="display: none;">
+              <input type="file" id="btn_file" name="btn_file" style="display:none" onchange="preview(this);uppic()">
+            </form>           
+            <a class="btn btn-lg btn-primary" href="javascript:void(0);" onClick='javasript:document.getElementById("btn_file").click();'>点击上传照片</a>
+          </div>
+          </div>          
+        </div>
+        <br>
+
+        <div class="statistics" id="simple_data_buttom" style="display: none;">
+          <div class="container">
+            <div class="row">
+              <div id="loading" style="display: none;">
+                <div style="display: inline-block;">
+                  <img src="img/detection/loading.gif">
+                </div>
+                <div style="display: inline-block;">
+                  <h5 style="color: #00BCD4;">&nbsp&nbsp正在检测</h5>
+                </div>             
+              </div>
+              <div id="result" class="section-text" style="display: none;">
+                <h2 style="color: #00BCD4;">检测结果</h2>
+                <h5 style="color: white;"><div id="gon_probability"></div></h5> 
+                <h5 style="color: white;"><div id="gon_hcdr"></div></h5> 
+                <h5 style="color: white;"><div id="gon_vcdr"></div></h5> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--|Scroll Top|-->
+  <a class="scroll-top" href="#intro-section"><i class="ion-arrow-up-a"></i></a>
+
+  </div> <!--|End About|-->
+</div>
+
+<!--|===================================================================
+| Javascripts
+|=======================================================================|-->
+<!--|jQuery|-->
+<script src="js/main/jquery.min.js"></script>
+<!--|Waypoints|-->
+<script src="js/main/waypoints.min.js"></script>
+<!--|Vegas|-->
+<script src="js/main/vegas.min.js"></script>
+<!--|Fitvids|-->
+<script src="js/main/jquery.fitvids.js"></script>
+<!--|Counterup|-->
+<script src="js/main/jquery.counterup.min.js"></script>
+<!--|Appear|-->
+<script src="js/main/jquery.appear.js"></script>
+<!--|Mixitup|-->
+<script src="js/main/jquery.mixitup.min.js"></script>
+<!--|Magnific Popup|-->
+<script src="js/main/jquery.magnific-popup.min.js"></script>
+<!--|Owl Carousel|-->
+<script src="js/main/owl.carousel.min.js"></script>
+<!--|Validate|-->
+<script src="js/main/jquery.validate.min.js"></script>
+<!--|Ajaxchimp|-->
+<script src="js/main/jquery.ajaxchimp.min.js"></script>
+<!--|Form|-->
+<script src="js/main/jquery.form.js"></script>
+<!--|Bootstrap|-->
+<script src="js/main/bootstrap.min.js"></script>
+<!--|Init|-->
+<script src="js/main/init.js"></script>
+
+<script src="js/detection/detect.js"></script>
+<script src="js/detection/cvi_busy_lib.js"></script>
+
+<script src="assets/js/username.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="utf-8" />
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="css/personcenter/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/personcenter/mygxin.css" />
+	<link rel="stylesheet" type="text/css" href="css/personcenter/mygrxx.css" />
+	<link rel="stylesheet" type="text/css" href="css/personcenter/myorder.css" />
+	<link rel="stylesheet" type="text/css" href="css/personcenter/proList.css" />
+
+	<link href="css/main/style.css" rel="stylesheet" type="text/css">
+
+	<link href="css/main/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link href="css/main/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="top-bar">
+				<a href="javascript:void(0);" onClick='function0("main.html")'>
+					<p><span class="desktop-meta">Gon Detector</p>
+				</a>
+				<p class="pull-right account-area" style="text-transform:none"><a class="login" href="#"
+						id="fwelcome"></a> </p>
+			</div>
+
+
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#primary-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="ion-drag"></span>
+					</button>
+
+				</div>
+
+				<!--Site Navbar-->
+				<div class="collapse scrollspy navbar-collapse" id="primary-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="javascript:void(0);" onClick='function0("main.html")'>主页</a></li>
+						<li><a href="javascript:void(0);" onClick='function0("forum.html")'>交流论坛</a></li>
+						<li><a href="javascript:void(0);" onClick='function0("knowaboutus.html")'>了解我们</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+
+
+				<div id='progress-bar'>
+					<div id="progress">
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--|End Header|-->
+
+
+	<div id="blog-listing" class="page-header">
+		<div class="container">
+
+			<div class="breadcrumb-trail pull-right">
+				<span class="trail-before">
+					<span class="breadcrumb-title">You are here:</span>
+				</span>
+				<a class="trail-link" href="index.html" title="Alfa Home" rel="home">Home</a>
+				<span class="sep">/</span>
+				<span class="trail-end">personal center</span>
+			</div>
+		</div>
+	</div>
+	<!--|End Page Header|-->
+
+
+	<div class="Bott">
+		<div class="wrapper clearfix">
+
+			<div class="zuo fl">
+				<h3>
+					<div onclick='change_head_picture()'><img id="real_head_picture1" /></div>
+					<p class="clearfix" style="font-size:5mm"><span id="getusername"><a href="javascript:void(0);"
+								onClick='function1("one")'></a></span></p>
+					<p class="clearfix" style="font-size:4mm"><span><a href="javascript:void(0);"
+								onClick="logout()">[退出登录]</a></span></p>
+				</h3>
+				<div>
+					<h4>账户管理</h4>
+					<ul>
+						<li><a href="javascript:void(0);" onClick='show_div("two")'>&nbsp&nbsp个人信息</a></li>
+						<li><a href="javascript:void(0);" onClick='show_div("three")'>&nbsp&nbsp修改密码</a></li>
+					</ul>
+					<br>
+					<h4>扩展服务</h4>
+					<ul>
+						<li><a href="javascript:void(0);" onClick='show_div("four")'>&nbsp&nbsp历史照片</a></li>
+						<li><a href="javascript:void(0);" onClick='show_div("five")'>&nbsp&nbsp我的发布</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="you fl" id="right">
+
+				<div id="two">
+					<h2>个人信息</h2>
+					<div class="gxin" id="two">
+
+						<!--<div class="tx"><a href="#"><img id="real_head_picture2" />
+								<p id="avatar">修改头像</p>
+							</a></div>-->
+
+						<div class="xx">
+							<h3 class="clearfix"><strong class="fl">基础资料</strong>
+							</h3>
+							<div id="infoname"></div>
+							<div id="infomail"></div>
+							<div id="infosex"></div>
+							<div id="infobirth"></div>
+							<div id="infoplace"></div>
+						</div>
+					</div>
+				</div>
+				<!--修改头像，这个div块是隐藏的-->
+				<div class="avatar">
+					<div class="clearfix"><a href="#" class="fr gb"><img src="img/icon4.png" /></a></div>
+					<h3>修改头像</h3>
+					<form id="head_picture" name="head_picture" action="" method="post" enctype="multipart/form-data">
+						<h4>请上传图片</h4>
+						<input type="text" id="change_picture_name" name="change_picture_name" style="display: none;">
+						<input type="file" value="上传头像" id="userphoto" name="userphoto" onchange="change_picture()">
+						<p>jpg或png，大小不超过2M</p>
+						<input type="button" value="提交" onclick="change_picture()" />
+					</form>
+				</div>
+
+
+				<div id="three" style="display: none">
+					<h2>修改密码</h2>
+					<form action="#" method="get" class="remima">
+						<!--<p><span>选择验证身份方式：</span><input type="checkbox" />密码验证  <input type="checkbox" />邮箱验证 </p>-->
+						<p><span>原密码：</span><input type="password" id="oldpwd" /></p>
+						<p class="op">输入原密码</p>
+						<p><span>新密码：</span><input type="password" id="newpwd" /></p>
+						<p class="op">6-16 个字符，需使用字母、数字或符号组合，不能使用纯数字、纯字母、纯符号</p>
+						<p><span>重复新密码：</span><input type="password" id="checkpwd" /></p>
+						<p class="op">请再次输入密码</p>
+						<!--<p><span>验证码：</span><input type="text" /><img src="img/temp/code.jpg" alt="" /></p>
+						<p class="op">按右图输入验证码，不区分大小写</p>-->
+						<input type="button" value="提交" onclick="change_password()" />
+					</form>
+				</div>
+
+				<div id="four" style="display: none">
+					<h2>历史图片</h2>
+					<div class="dkuang clearfix deng" style="display: none;" id="hispic-0">
+
+						<!--<div class="word clearfix">
+							<ul class="fl clearfix">
+								<li class="hispic_time">2016年12月1日 18:53</li>
+								<li>编号：5160513358520018</li>
+							</ul>
+						</div>-->
+						<div class="shohou clearfix">
+							<a class="fl"><img class="gon_pic"></a>
+
+							<b>
+								<p class="fl detect_result"></p>
+							</b>
+
+							<p class="fr">
+								<br><br>
+								<a>删除记录</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="five" style="display: none">
+					<h2>我的文章</h2>
+					<div class="sx clearfix">
+						<div class="clearfix">
+							<div id="my_article-0" style="display: none;">
+								<dl class="fl">
+									<dd><p class="my_article_id">文章编号</p></dd>
+									<dt><a href="#"><img class="my_article_pic"  style="height: 151.05px;"/></a></dt>
+									<dd><a href="#" class="my_article_name">文章名</a></dd>
+									<dd class="my_article_time">发布时间</dd>
+									<dd class="my_article_comment">16000人评价</dd>
+									<dd><a href="#2">删除</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<a class="scroll-top" href="#blog-listing"><i class="ion-arrow-up-a"></i></a>
+
+	<!--|jQuery|-->
+	<script src="js/main/jquery.min.js"></script>
+	<!--|Waypoints|-->
+	<script src="js/main/waypoints.min.js"></script>
+	<!--|Vegas|-->
+	<script src="js/main/vegas.min.js"></script>
+	<!--|Fitvids|-->
+	<script src="js/main/jquery.fitvids.js"></script>
+	<!--|Counterup|-->
+	<script src="js/main/jquery.counterup.min.js"></script>
+	<!--|Appear|-->
+	<script src="js/main/jquery.appear.js"></script>
+	<!--|Mixitup|-->
+	<script src="js/main/jquery.mixitup.min.js"></script>
+	<!--|Magnific Popup|-->
+	<script src="js/main/jquery.magnific-popup.min.js"></script>
+	<!--|Owl Carousel|-->
+	<script src="js/main/owl.carousel.min.js"></script>
+	<!--|Validate|-->
+	<script src="js/main/jquery.validate.min.js"></script>
+	<!--|Ajaxchimp|-->
+	<script src="js/main/jquery.ajaxchimp.min.js"></script>
+	<!--|Form|-->
+	<script src="js/main/jquery.form.js"></script>
+	<!--|Bootstrap|-->
+	<script src="js/main/bootstrap.min.js"></script>
+	<!--|Init|-->
+	<script src="js/main/init.js"></script>
+
+	<script src="js/personcenter/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/personcenter/user.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/username.js"></script>
+</body>
+
+</html>
